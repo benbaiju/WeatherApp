@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+  
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="masthead" style="background-image: url('weather.png');">
+    <div class="container mt-5">
+        <h1 class="mb-4">Weather App</h1>
+
+        <div class="form-group">
+            <label for="cityInput">Enter City Name:</label>
+            <input type="text" class="form-control" id="cityInput" placeholder="E.g., London">
+        </div>
+
+        <button class="btn btn-primary mb-4" onclick="getWeather()">Get Full Weather Details</button>
+
+        <button class="btn btn-primary mb-4" onclick="fetchWeatherArray()">Get Weather Description</button>
+        <button class="btn btn-primary mb-4" onclick="fetchMainObject()">Get Temperature Details</button>
+       
+
+        <div id="weatherResult" class="mb-4">
+            
+        </div>
+    </div>
+
+      
+        <script src="app.js"></script>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </div>
+</body>
+
+</html>
